@@ -14,7 +14,7 @@ Tupper's formula is defined by the inequality:
 
 It generates images based on a very large integer `K`, where `x` and `y` are the pixel coordinates.
 
-Learn more about Tupper's Formula: [Link](https://clairelommeblog.fr/2022/10/16/la-formule-autoreferente-de-tupper/)
+Learn more about Tupper's Formula: https://clairelommeblog.fr/2022/10/16/la-formule-autoreferente-de-tupper/
 
 ## Features
 
