@@ -1,82 +1,81 @@
-# The Tupper's Formula (Everything Formula)
+# Tupper's Formula (Everything Formula)
 
 ## Description
 
-Ce projet est une application interactive en Python qui repose sur la formule de Tupper, une formule mathématique qui, lorsqu'elle est utilisée avec un certain entier `K`, permet de visualiser une image de 106*17 pixels. 
-L'utilisateur peut soit dessiner une image directement dans une grille interactive, soit entrer une valeur de `K` pour afficher l'image associée à ce nombre.
+This project is an interactive application in Python that is based on Tupper's formula, a mathematical formula that, when used with a specific integer `K`, allows for the visualization of an image of 106 by 17 pixels. The user can either draw an image directly in an interactive grid or enter a value of `K` to display the associated image.
 
-La valeur de `K` est calculée en interprétant la grille de dessin et peut ensuite être copiée dans le presse-papiers.
+The value of `K` is calculated by interpreting the drawing grid and can then be copied to the clipboard.
 
-La formule de Tupper est une inégalité définie par :
+Tupper's formula is defined by the inequality:
 
 ```
 1/2 < ⌊ mod(⌊y/17⌋ 2^(-17⌊x⌋ - mod(⌊y⌋, 17)), 2) ⌋
 ```
 
-Elle permet de générer des images en fonction d'un entier `K` très grand, où `x` et `y` sont les coordonnées des pixels.
+It generates images based on a very large integer `K`, where `x` and `y` are the pixel coordinates.
 
-Voir plus sur la Formule de Tupper : https://clairelommeblog.fr/2022/10/16/la-formule-autoreferente-de-tupper/
+Learn more about Tupper's Formula: [Link](https://clairelommeblog.fr/2022/10/16/la-formule-autoreferente-de-tupper/)
 
-## Fonctionnalités
+## Features
 
-- **Dessin interactif** : L'utilisateur peut dessiner des pixels sur une grille de 106 colonnes et 17 lignes.
-- **Calcul du nombre `K`** : L'application calcule le nombre `K` correspondant à l'image dessinée et le copie dans le presse-papiers.
-- **Affichage de l'image pour un `K` donné** : L'utilisateur peut entrer une valeur de `K`, et l'image associée à ce nombre est affichée.
-- **Réinitialisation** : Il est possible de réinitialiser la grille pour effacer tous les pixels.
+- **Interactive Drawing**: Users can draw pixels on a grid of 106 columns and 17 rows.
+- **Calculate `K` Value**: The application calculates the `K` value corresponding to the drawn image and copies it to the clipboard.
+- **Display Image for Given `K`**: Users can enter a value of `K`, and the image associated with that number will be displayed.
+- **Reset**: It is possible to reset the grid to clear all pixels.
 
-## Prérequis
+## Prerequisites
 
-Avant d'exécuter l'application, assurez-vous d'avoir installé les dépendances nécessaires. Vous pouvez les installer via `pip` :
+Before running the application, make sure to install the necessary dependencies. You can install them via `pip`:
 
 ```bash
 pip install arcade matplotlib tk
 ```
 
-### Bibliothèques utilisées :
-- **arcade** : Pour l'interface graphique de la grille de dessin.
-- **matplotlib** : Pour la génération et l'affichage du graphique correspondant à la formule de Tupper.
-- **tkinter** : Pour la saisie de la valeur `K` et la gestion des fenêtres d'entrée utilisateur.
+### Libraries Used:
+- **arcade**: For the graphical interface of the drawing grid.
+- **matplotlib**: For generating and displaying the graph corresponding to Tupper's formula.
+- **tkinter**: For entering the `K` value and managing user input windows.
 
 ## Installation
 
-1. Clonez ce dépôt sur votre machine locale :
+1. Clone this repository to your local machine:
    ```bash
    git clone https://github.com/swan-maillard/TuppersFormula.git
    ```
 
-2. Accédez au répertoire du projet :
+2. Navigate to the project directory:
    ```bash
    cd TuppersFormula
    ```
 
-3. Installez les dépendances :
+3. Install the dependencies:
    ```bash
    pip install arcade matplotlib tk
    ```
 
-4. Lancez le programme :
+4. Launch the program:
    ```bash
    python main.py
    ```
 
-## Utilisation
+## Usage
 
-### Dessiner une image
+### Drawing an Image
 
-1. Cliquez dans la grille pour allumer ou éteindre les pixels.
-2. Lorsque vous êtes satisfait du dessin, cliquez sur **Plot** pour générer le nombre `K`.
-3. L'image correspondant à votre dessin sera affichée à l'aide de `matplotlib`, et le nombre `K` sera copié dans le presse-papiers.
+1. Click on the grid to turn pixels on or off.
+2. When satisfied with the drawing, click **Plot** to generate the `K` value.
+3. The image corresponding to your drawing will be displayed using `matplotlib`, and the `K` value will be copied to the clipboard.
 
-### Saisir une valeur de `K`
+### Entering a `K` Value
 
-1. Cliquez sur le bouton **Input a K**.
-2. Saisissez un entier divisible par 17 et cliquez sur **Plot** pour afficher l'image correspondante.
-3. Si `K` n'est pas divisible par 17, un message d'erreur sera affiché.
+1. Click on the **Input a K** button.
+2. Enter an integer divisible by 17 and click **Plot** to display the corresponding image.
+3. If `K` is not divisible by 17, an error message will be displayed.
 
-## Auteurs
+## Authors
 
 - Swan Maillard (maillard.swan@gmail.com)
 
-## Licence
+## License
 
-Ce projet est sous licence MIT. Veuillez consulter le fichier `LICENSE` pour plus d'informations.
+This project is licensed under the MIT License. Please see the `LICENSE` file for more information.
